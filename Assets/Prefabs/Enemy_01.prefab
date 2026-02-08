@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 2797578942528116508}
   - component: {fileID: 5425210926288318845}
   - component: {fileID: 5364089261658776712}
-  - component: {fileID: 3231481065053819909}
   - component: {fileID: 2696264379723613391}
+  - component: {fileID: 7747879418146546270}
+  - component: {fileID: 8383476918404149136}
   m_Layer: 7
   m_Name: Enemy_01
   m_TagString: Untagged
@@ -160,20 +161,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.024, y: 1.024}
   m_EdgeRadius: 0
---- !u!114 &3231481065053819909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2738562309219404907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e311338dc9d07c4495acb2e11f21c69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 7327531734551808552, guid: 49a9fa459bebdea40962b64c2d360f74,
-    type: 3}
 --- !u!95 &2696264379723613391
 Animator:
   serializedVersion: 5
@@ -195,3 +182,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7747879418146546270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2738562309219404907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e311338dc9d07c4495acb2e11f21c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 7327531734551808552, guid: 49a9fa459bebdea40962b64c2d360f74,
+    type: 3}
+  defaultHealthPoint: 100
+--- !u!114 &8383476918404149136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2738562309219404907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e98d06489be27a48b19b8c2cfbf49ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 7747879418146546270}
+  damage: 50
