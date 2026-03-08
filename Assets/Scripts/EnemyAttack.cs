@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class EnemyAttack: MonoBehaviour
 {
+    public static int LivingEnemyCount;
+    private void Awake() => LivingEnemyCount++;
+
+protected override void Die()
+{
+LivingEnemyCount--;
+base.Die();
+}
     public EnemyHealth health; // Tham chiếu đến script máu của chính kẻ thù
     public int damage; // Sát thương gây ra cho người chơi
 
